@@ -1,6 +1,6 @@
-package com.example.orderservice.factory;
+package com.techstack.orderservice.factory;
 
-import com.example.orderservice.model.Order;
+import com.techstack.orderservice.model.Order;
 
 //Factory to update order status
 public class OrderStatusFactory {

@@ -1,11 +1,11 @@
-package com.example.orderservice.controller;
+package com.techstack.orderservice.controller;
 
 
 import com.example.orderservice.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import com.example.orderservice.service.OrderService;
-import com.example.orderservice.model.Order;
+import com.techstack.orderservice.model.Order;
 
 import java.util.List;
 
