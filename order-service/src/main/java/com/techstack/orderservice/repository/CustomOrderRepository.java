@@ -1,7 +1,8 @@
-package com.example.orderservice.repository;
+package com.techstack.orderservice.repository;
 
-import com.example.orderservice.model.Order;
+import com.techstack.orderservice.model.Order;
 import java.util.List;
 
 public interface CustomOrderRepository {
-    Lis
+    List<Order> findOrdersByStatus(String status);
+}

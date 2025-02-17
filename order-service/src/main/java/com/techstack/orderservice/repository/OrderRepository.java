@@ -1,8 +1,10 @@
-package com.example.orderservice.repository;
+package com.techstack.orderservice.repository;
 
-import com.example.orderservice.model.Order;
+import com.techstack.orderservice.model.Order;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 @Repository
-public interface OrderRepository extends JpaRepository<Order, Long>, Cust
+public interface OrderRepository extends JpaRepository<Order, Long>, CustomOrderRepository {
+
+}
