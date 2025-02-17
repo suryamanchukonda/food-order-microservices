@@ -11,9 +11,9 @@ import java.time.LocalDateTime;
 public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private final Long id;
+    private Long id;
     private String status;
-    private final LocalDateTime createdAt;
+    private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
 
     //Constructor to enforce Object creation through Builder
@@ -21,6 +21,10 @@ public class Order {
         this.status = builder.status;
         this.createdAt = builder.createdAt;
         this.updatedAt = LocalDateTime.now();
+    }
+
+    protected Order() {
+
     }
 
     //Nested static Builder class
